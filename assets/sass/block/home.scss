@@ -1,0 +1,15 @@
+@import '../colors';
+
+.home {
+  background: $color-primary;
+  background: linear-gradient(0deg, $color-secondary 0%, $color-primary 100%);
+  color: $text-secondary;
+  font-size: 1.125rem;
+  font-weight: 300;
+  padding: 4rem 0px;
+  text-align: center;
+
+  .home__list li {
+    margin-bottom: 2rem;
+  }
+}
