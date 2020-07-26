@@ -1,8 +1,7 @@
-@import '../colors';
+@import '../colors', '../master';
 
 .home {
-  background: $color-primary;
-  background: linear-gradient(0deg, $color-secondary 0%, $color-primary 100%);
+  @include gradient-primary;
   color: $text-secondary;
   font-size: 1.125rem;
   font-weight: 300;

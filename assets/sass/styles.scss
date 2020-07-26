@@ -55,8 +55,5 @@ main {
   );
 }
 
-body {
-  padding-bottom: 200vh;
-}
-
-@import './block/navbar', './block/home', './block/about', './block/contact';
+@import './block/navbar', './block/home', './block/about', './block/contact',
+  './block/footer';
