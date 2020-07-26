@@ -13,6 +13,47 @@
       href="./assets/img/favicon.png"
       type="image/x-icon"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/styles.min.css" />
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__brand">
+          <picture>
+            <source srcset="./assets/img/logo-color.webp" />
+            <img
+              src="./assets/img/logo-color.png"
+              alt="Logomarca do Carlos Nobre Fisioterapeuta"
+            />
+          </picture>
+          <h1 class="navbar__title">Carlos Nobre</h1>
+        </div>
+
+        <button
+          aria-controls="nav"
+          aria-label="Toggle navigation links"
+          class="navbar__button"
+          type="button"
+        >
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+
+        <ul id="nav" class="navbar__nav" aria-expanded="false">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <script async src="./assets/js/navbar.js"></script>
+  </body>
 </html>

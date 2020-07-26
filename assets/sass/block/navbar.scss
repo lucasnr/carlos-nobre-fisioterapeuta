@@ -1,0 +1,71 @@
+@import '../colors', '../master';
+
+.navbar {
+  height: $navbar-height;
+  padding: 0.75rem 0px;
+  border-bottom: 0.0625rem solid
+    transparentize($color: $text-primary, $amount: 0.75);
+
+  .container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .navbar__brand {
+    align-items: center;
+    display: flex;
+
+    img {
+      display: block;
+      height: 1.875rem;
+      width: 3.625rem;
+    }
+
+    .navbar__title {
+      font-size: 1.125rem;
+      font-weight: 500;
+      margin-left: 0.5rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .navbar__button {
+    background-color: transparent;
+    border: none;
+
+    .line {
+      background-color: $color-primary;
+      border-radius: 999px;
+      height: 0.25rem;
+      width: 1.875rem;
+
+      &:nth-child(2) {
+        margin: 0.25rem 0px;
+      }
+    }
+  }
+
+  .navbar__nav {
+    display: none;
+    font-size: 1rem;
+    font-weight: 500;
+    flex-basis: 100%;
+    text-align: center;
+    text-transform: uppercase;
+
+    li {
+      margin-bottom: 0.5rem;
+      margin-top: 1.5rem;
+    }
+  }
+
+  &.active {
+    height: auto;
+
+    .navbar__nav {
+      display: block;
+    }
+  }
+}
