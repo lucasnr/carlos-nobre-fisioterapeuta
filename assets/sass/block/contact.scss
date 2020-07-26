@@ -1,0 +1,41 @@
+@import '../colors';
+
+.contact {
+  padding: 3rem 0px;
+
+  .contact__button {
+    border: none;
+    border-style: solid;
+    border-width: 0.125rem;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0px auto;
+    padding: 0.75rem 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 0.2s linear;
+    width: 11.25rem;
+
+    &:first-child {
+      background-color: $color-primary;
+      border-color: transparent;
+      color: $text-secondary;
+
+      &:hover {
+        background-color: darken($color: $color-primary, $amount: 10);
+      }
+    }
+
+    &:last-child {
+      background-color: transparent;
+      border-color: $text-primary;
+      color: $text-primary;
+      margin-top: 1rem;
+
+      &:hover {
+        background-color: transparentize($color: $text-primary, $amount: 0.9);
+      }
+    }
+  }
+}

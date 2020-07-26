@@ -50,7 +50,7 @@ main {
   background: #fff;
   background: linear-gradient(
     0deg,
-    rgb(210, 210, 210) 0%,
+    rgb(220, 220, 220) 0%,
     rgb(255, 255, 255) 100%
   );
 }
@@ -59,4 +59,4 @@ body {
   padding-bottom: 200vh;
 }
 
-@import './block/navbar', './block/home', './block/about';
+@import './block/navbar', './block/home', './block/about', './block/contact';
