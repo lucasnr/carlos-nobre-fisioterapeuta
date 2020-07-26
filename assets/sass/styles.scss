@@ -46,8 +46,17 @@ main {
   margin-top: $navbar-height;
 }
 
+#about-contact-gradient {
+  background: #fff;
+  background: linear-gradient(
+    0deg,
+    rgb(210, 210, 210) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
 body {
   padding-bottom: 200vh;
 }
 
-@import './block/navbar', './block/home';
+@import './block/navbar', './block/home', './block/about';
