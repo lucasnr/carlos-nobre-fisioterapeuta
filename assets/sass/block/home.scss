@@ -1,14 +1,51 @@
 @import '../colors', '../master';
 
 .home {
+  align-items: center;
   @include gradient-primary;
   color: $text-secondary;
+  display: flex;
   font-size: 1.125rem;
   font-weight: 300;
+  min-height: calc(100vh - #{$navbar-height});
+  overflow: hidden;
   padding: 4rem 0px;
+  position: relative;
   text-align: center;
 
-  .home__list li {
-    margin-bottom: 2rem;
+  .home__list {
+    display: flex;
+    flex-direction: column;
+    z-index: 25;
+
+    li {
+      margin: 1rem 0px;
+    }
+  }
+
+  .home__photo {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 115%;
+    z-index: -1;
+  }
+
+  @media (min-width: 992px) {
+    background: linear-gradient(
+      0deg,
+      transparentize($color: $color-secondary, $amount: 0.0875) 0%,
+      transparentize($color: $color-primary, $amount: 0.0875) 100%
+    );
+
+    .home__list {
+      text-align: left;
+      width: 75%;
+    }
+
+    .home__photo {
+      display: block;
+    }
   }
 }

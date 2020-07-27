@@ -25,4 +25,17 @@
     margin-top: 1rem;
     padding: 0px 1rem;
   }
+
+  @media (min-width: 992px) {
+    padding: 4rem 0px;
+    text-align: left;
+
+    .about__logo {
+      margin: 0px;
+    }
+
+    .about__list li {
+      padding: 0px;
+    }
+  }
 }
