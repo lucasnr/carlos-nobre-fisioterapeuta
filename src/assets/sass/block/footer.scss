@@ -1,0 +1,59 @@
+@import '../master', '../colors';
+
+.footer {
+	@include gradient-primary;
+
+	.container {
+		padding: 2rem;
+	}
+
+	.footer__social-medias {
+		display: flex;
+		justify-content: center;
+
+		li a {
+			align-items: center;
+			background-color: #d2d2d2;
+			border-radius: 1.5rem;
+			box-shadow: 0px 0.5rem 1rem rgba($color: #000000, $alpha: 0.25);
+			display: flex;
+			height: 5rem;
+			justify-content: center;
+			margin: 1rem;
+			width: 5rem;
+			transition: background-color 0.2s linear;
+
+			svg {
+				color: $color-primary;
+				height: 1.875rem;
+				transition: transform 0.2s linear;
+				width: 1.875rem;
+			}
+
+			&:hover {
+				background-color: #fff;
+
+				svg {
+					transform: scale(1.375);
+				}
+			}
+
+			@media (min-width: 768px) {
+				height: 6.25rem;
+				width: 6.25rem;
+
+				svg {
+					height: 2.5rem;
+					width: 2.5rem;
+				}
+			}
+		}
+	}
+
+	.footer__copyright {
+		color: $text-secondary;
+		font-weight: 300;
+		margin-top: 1rem;
+		text-align: center;
+	}
+}

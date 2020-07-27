@@ -1,6 +1,0 @@
-$navbar-height: 3.5rem;
-
-@mixin gradient-primary {
-  background: $color-primary;
-  background: linear-gradient(0deg, $color-secondary 0%, $color-primary 100%);
-}

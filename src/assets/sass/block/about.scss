@@ -1,0 +1,41 @@
+.about {
+	padding: 2rem 0px;
+	text-align: center;
+
+	.about__logo {
+		display: block;
+		height: 6.5625rem;
+		margin: 0px auto;
+		width: 12.5rem;
+	}
+
+	.about__title {
+		font-size: 1.875rem;
+		font-weight: 500;
+		margin-top: 1rem;
+	}
+
+	.about__subtitle {
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+
+	.about__list li {
+		font-weight: 300;
+		margin-top: 1rem;
+		padding: 0px 1rem;
+	}
+
+	@media (min-width: 992px) {
+		padding: 4rem 0px;
+		text-align: left;
+
+		.about__logo {
+			margin: 0px;
+		}
+
+		.about__list li {
+			padding: 0px;
+		}
+	}
+}
